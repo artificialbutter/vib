@@ -1,0 +1,24 @@
+{
+    "name": "vib",
+    "description": "vib",
+    "version": "1.0",
+    "manifest_version": 2,
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "all_frames": true,
+        "js":      ["assets/js/contentScript.js"]
+    }],
+    "background": {
+        "scripts": ["assets/js/background.js"],
+        "persistent": false
+      },
+      "permissions": [
+        "https://c.tenor.com/*"
+      ],
+      "icons": {
+        "16": "assets/images/icon16.png",
+        "32": "assets/images/icon32.png",
+        "48": "assets/images/icon48.png",
+        "128": "assets/images/icon128.png"
+      }
+  }
